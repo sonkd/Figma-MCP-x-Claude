@@ -1,0 +1,102 @@
+[
+  {
+    "query": "can you open this figma link and tell me if our design system is well organized? https://figma.com/design/abc123/BankApp-DS?node-id=0-1",
+    "should_trigger": true,
+    "notes": "Direct audit request with Figma URL"
+  },
+  {
+    "query": "our figma ds file has like 40 pages and nobody knows what goes where anymore, can you help clean it up?",
+    "should_trigger": true,
+    "notes": "Restructuring request, informal language"
+  },
+  {
+    "query": "i want to check if our color tokens follow semantic naming or if they're all still named like red-500 and blue-200",
+    "should_trigger": true,
+    "notes": "Token naming audit — should trigger even without 'design system' keyword"
+  },
+  {
+    "query": "we have a button component in figma but it's missing disabled and loading states, can you audit it and tell me what's missing?",
+    "should_trigger": true,
+    "notes": "Component state audit"
+  },
+  {
+    "query": "help me set up a maintenance and governance page in our figma design system for a mobile banking app",
+    "should_trigger": true,
+    "notes": "Governance setup — explicit DS + fintech context"
+  },
+  {
+    "query": "i need to add descriptions to all our components in figma so the dev team can understand them during handoff",
+    "should_trigger": true,
+    "notes": "Component documentation — write operation in Figma"
+  },
+  {
+    "query": "does our figma file have proper dark mode token support? we only have one mode in our variable collection right now",
+    "should_trigger": true,
+    "notes": "Variable/token mode audit"
+  },
+  {
+    "query": "we're building a pin pad and otp screen for our banking app — can you check if the components in our figma file cover all the states we need?",
+    "should_trigger": true,
+    "notes": "Fintech-specific component audit"
+  },
+  {
+    "query": "refactor our figma design system to follow atomic design principles and make sure everything is named consistently",
+    "should_trigger": true,
+    "notes": "Full refactor request"
+  },
+  {
+    "query": "audit our figma file and generate a report showing what's missing from our design system",
+    "should_trigger": true,
+    "notes": "Audit + report generation"
+  },
+  {
+    "query": "can you design a new color palette for our banking app? we want to move from blue to teal as our primary",
+    "should_trigger": false,
+    "notes": "Visual redesign — out of scope; this skill does not do brand repositioning"
+  },
+  {
+    "query": "export all assets from our figma file as SVGs so i can use them in the react native app",
+    "should_trigger": false,
+    "notes": "Asset export task — not an audit/refactor; different workflow"
+  },
+  {
+    "query": "generate react components from our figma design system automatically",
+    "should_trigger": false,
+    "notes": "Code generation — this skill is Figma-side only, not code-side"
+  },
+  {
+    "query": "i have a pdf of our old brand guidelines, can you extract the color hex values and typography specs?",
+    "should_trigger": false,
+    "notes": "PDF extraction — no Figma involved, different skill needed"
+  },
+  {
+    "query": "can you build me a design system from scratch for a new fintech startup? we have nothing yet, starting from zero",
+    "should_trigger": false,
+    "notes": "Build from scratch — skill is audit/refactor of existing DS, not greenfield creation"
+  },
+  {
+    "query": "review the accessibility of our mobile app screens — specifically check tap target sizes and color contrast on the transfer flow",
+    "should_trigger": false,
+    "notes": "Screen-level accessibility review, not DS audit — adjacent but different scope"
+  },
+  {
+    "query": "we're about to do a design-to-dev handoff for our card management feature, what should we prepare?",
+    "should_trigger": false,
+    "notes": "Handoff planning advice — doesn't require Figma file audit"
+  },
+  {
+    "query": "write figma plugin code to auto-rename all layers that don't follow our naming convention",
+    "should_trigger": false,
+    "notes": "Plugin development — coding task, not DS audit/refactor agent workflow"
+  },
+  {
+    "query": "open our figma file and check if the button component uses the correct primary color token or if it's hardcoded",
+    "should_trigger": true,
+    "notes": "Token compliance check within a component — should trigger"
+  },
+  {
+    "query": "our design system figma file needs a proper archive section for deprecated components, can you set that up?",
+    "should_trigger": true,
+    "notes": "Governance / archive setup — directly in skill scope"
+  }
+]
